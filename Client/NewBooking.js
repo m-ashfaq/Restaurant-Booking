@@ -65,27 +65,26 @@ const newBooking = () => {
 
         window.alert("Booking Created!");
 
-        // console.log(`request body:`, requestBody)
-        // console.log(`request body: ${JSON.stringify(requestBody, null, 2)}`);
+        console.log(`request body:`, requestBody)
+        console.log(`request body: ${JSON.stringify(requestBody, null, 2)}`);
 
 
         // Event listener to for Delete Fruit Button
-        // $(document).on("click", "#delete-booking", async (e) => {
-        //     e.preventDefault();
+        $(document).on("click", "#delete-booking", async (e) => {
+            e.preventDefault();
 
-    //         const response = await $.ajax({
-    //         type: "DELETE",
-    //         url: `/api/booking/delete-booking/${$("#bookingId").val()}`,
-    //         contentType: "application/json",
-    //     });
+            const response = await $.ajax({
+            type: "DELETE",
+            url: `/api/booking/delete-booking/${$("#bookingId").val()}`,
+            contentType: "application/json",
+        });
     
-    //       // Create a pop up alert in the UI to inform the user that fruit was deleted
+          // Create a pop up alert in the UI to inform the user that fruit was deleted
         
-    //     window.alert("Booking Deleted!");
+        window.alert("Booking Deleted!");
     });
 
-
     return form;
-};
+},
 
 export default newBooking;
