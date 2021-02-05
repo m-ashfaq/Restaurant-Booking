@@ -12,6 +12,7 @@ mongoose.connect("mongodb://localhost:27017/Restaurant-Booking", {
 const internalRouter = require("./Routes/InternalRoutes");
 const bookingRouter = require("./Routes/bookingRoutes");
 const timingRouter = require("./Routes/timingRoutes");
+const userRouter = require("./routes/userRoutes");
 
 
 //initialize app objects
@@ -29,6 +30,7 @@ app.get("/", (request, response) => response.send("Server is Running OK"));
 app.use("/internal", internalRouter);
 app.use("/booking", bookingRouter);
 app.use("/timing", timingRouter);
+app.use("/users", userRouter);
 
 // start your server
 app.listen(port, () =>

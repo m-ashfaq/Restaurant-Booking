@@ -84,7 +84,7 @@ body {
     width: 18px;
     height: 17px;
     background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
-}
+} 
 
 .like-btn {
     position: absolute;
@@ -114,7 +114,7 @@ body {
     margin-right: 50px;
 }
 
-Let’s add some basic style to  product name and description.
+
 .description {
     padding-top: 10px;
     margin-right: 60px;

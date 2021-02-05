@@ -85,6 +85,7 @@ const newBooking = () => {
     });
 
     return form;
-},
+    
+};
 
 export default newBooking;
